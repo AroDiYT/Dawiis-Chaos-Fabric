@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dawiischaos",
+	"version": "${version}",
+	"name": "Dawiis Chaos",
+	"description": "The Chaotic Creation of Dawii",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dawiischaos/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.alloria.dawiischaos.DawiisChaos"
+		],
+		"fabric-datagen": [
+			"org.alloria.dawiischaos.DawiisChaosDataGenerator"
+		],
+		"client": [
+			"org.alloria.dawiischaos.DawiisChaosClient"
+		]
+	},
+	"mixins": [
+		"dawiischaos.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
